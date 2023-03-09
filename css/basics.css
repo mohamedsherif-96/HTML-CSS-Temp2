@@ -1,0 +1,140 @@
+
+
+/* 
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+} 
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*/
+
+/* ---------------------------------------------- */
+
+/* Centering Elements */
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.center-pos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------------------------------------------- */
+
+/* Circles */
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* ---------------------------------------------- */
+
+/* Arrows */
+
+.fw-arrow {
+    position: relative;
+}
+.fw-arrow::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+
+.fw-arrow.top::before {
+    border: 10px solid transparent;
+    border-bottom: 10px solid black;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+.fw-arrow.right::before {
+    border: 10px solid transparent;
+    border-left: 10px solid black;
+    top: 50%;
+    right: 0%;
+    transform: translate(100%, -50%);
+}
+.fw-arrow.bottom::before {
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+.fw-arrow.left::before {
+    border: 10px solid transparent;
+    border-right: 10px solid black;
+    top: 50%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+}
+
+/* ---------------------------------------------- */
